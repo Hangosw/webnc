@@ -1,124 +1,143 @@
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .thanh-menu {
+    display: flex;
+    background-color: #000000;
+    border-bottom: 2px solid rgba(252, 250, 250, 0.25);
+    height: 60px;
+    line-height: normal;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .thanh-menu a{
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
 
-.thanh-menu {
-  display: flex;
-  background-color: #000000;
-  border-bottom: 2px solid rgba(252, 250, 250, 0.25);
-  height: 60px;
-  line-height: normal;
-  width: 100%;
+  /* Hover cho menu item */
+  #menu-item:hover {
+    color: white;
+    height: 10px;
+    background: rgba(180, 180, 180, 0.3);
+    border-radius: 10px;
+  }
+  #menu-item {
+    margin:0%;
+    line-height: 1.1;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .0125em;
+    color: white;
+  }
+  
+  #menu-item {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  #menu-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    background: #d5934a;
+    border-radius: 90px;
+  }
+  #menu-item:hover::after {
+    height: 4px;
+  }
+
+  .lor-icon-menu-bar-left {
+    height: 80px;
+    margin-left: 22px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Nút đăng nhập và chơi ngay */
+  .menu-right-content {
+    display: inline-block;
+    margin-left: auto;
+    padding-right: 40px;
+}
+  .account-menu-bar-1 {
+    margin-right: 10px;
+    height: 36px;
+    color: white;
+    display: flex;
+    background-color: grey;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 10px;
+    margin-top: 3%;
+  }
+  .account-menu-bar-2 {
+    color: black;
+    display:flex;
+    background: linear-gradient(133.11deg, rgb(160, 106, 43) 0%, rgb(202, 159, 66) 97.33%);
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 90px;
+    height: 36px;
+    margin-top: 3%;
+
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li #menu-item {
+    display: flex;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000000;
+  }
+  /* slider */
+.main-background{
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(C:\Users\huyho\OneDrive\Desktop\đồ_án_web\full\nidalee-lv1.png)no-repeat;
+  min-height: 100vh;
   align-items: center;
+  background-size: cover;
+  background-position: center;
+  display: flex;
 }
 
-.thanh-menu a{
+.background-content{
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Hover cho menu item */
-#menu-item:hover {
-  color: white;
-  height: 10px;
-  background: rgba(180, 180, 180, 0.3);
-  border-radius: 10px;
-}
-#menu-item {
-  margin:0%;
-  line-height: 1.1;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: .0125em;
-  color: white;
-}
-
-#menu-item {
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  color: whitesmoke;
-}
-
-#menu-item::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -10px;
+  bottom: 47px;
   width: 100%;
-  background: #d5934a;
-  border-radius: 90px;
-}
-#menu-item:hover::after {
-  height: 4px;
+  color: #fff;
 }
 
-.lor-icon-menu-bar-left {
-  height: 80px;
-  margin-left: 22px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+.background-content .text-heading{
+  font-size: 48px;
 }
 
-.icon {
-  position: relative;
+.background-content .text-description{
+  font-size: 24px;
 }
-/* Nút đăng nhập và chơi ngay */
-.menu-right-content {
-  display: inline-block;
-  margin-left: auto;
-  padding-right: 40px;
-  padding-bottom: 12px;
-}
-.account-menu-bar-1 {
-  margin-right: 10px;
-  height: 36px;
-  color: white;
-  display: flex;
-  background-color: grey;
-  font-size: 15px;
-  font-weight: bold;
-  font-family: sans-serif;
-  border-radius: 10px;
-  margin-top: 3%;
-}
-.account-menu-bar-2 {
-  color: black;
-  display:flex;
-  background: linear-gradient(133.11deg, rgb(160, 106, 43) 0%, rgb(202, 159, 66) 97.33%);
-  font-size: 15px;
-  font-family: sans-serif;
-  font-weight: bold;
-  border-radius: 90px;
-  height: 36px;
-  margin-top: 3%;
-
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
-li #menu-item {
-  display: flex;
-  font-size: 18px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  background-color: #000000;
-}
-
 /* slider */
 .main-background{
   background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/assets/img/slidernekko.jpg)no-repeat;
@@ -154,20 +173,18 @@ li #menu-item {
   justify-content: center;
 }
 
-.box{
+.card{
   width: 250px;
   margin: 0 30px;
-  box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
   transition: 0.5s;
-  cursor: pointer;
   overflow-x: auto;
   scroll-behavior: smooth;
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 100%;
   overflow: hidden;
 }
-.box img{
+.card img{
   display: block;
   width: 100%;
   border-radius: 5px;
@@ -226,11 +243,11 @@ li #menu-item {
 .product-thumb {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:fill;
+  display: block;
 }
-
 /* about us */
-.aboutus h1{
+.about-us h1{
   text-align: center;
 }
 .title1{
@@ -253,78 +270,78 @@ li #menu-item {
   text-align: right;
 }
 
-/* footer */
-.footer {
-  display: flex;
-  background-color: #000000;
-  border-top: 2px solid rgba(252, 250, 250, 0.25);
-  height:280px;
-  line-height: normal;
-  width: 100%;
-}
-.first-para {
-display: block;
-color: white;
-height: 40px;
-width: 588px;
-padding-left: 45px;
-padding-top: 30px;
-line-height: 23px;
-font-family: sans-serif
-}
 
+  /* Footer */
+  .footer {
+    display: flex;
+    background-color: #000000;
+    border-top: 2px solid rgba(252, 250, 250, 0.25);
+    height:280px;
+    line-height: normal;
+    width: 100%;
+  }
+  .first-para {
+  display: block;
+  color: white;
+  height: 40px;
+  width: 588px;
+  padding-left: 45px;
+  padding-top: 30px;
+  line-height: 23px;
+  font-family: sans-serif
+}
 p3{
-padding-left: 570px;
+  padding-left: 570px;
 }
 
 .second-para {
-display: block;
-color: white;
-height: 40px;
-padding-left: 45px;
-padding-top: 95px;
-font-family: sans-serif
+  display: block;
+  color: white;
+  height: 40px;
+  padding-left: 45px;
+  padding-top: 95px;
+  font-family: sans-serif
 }
 .icon-contact {
-height: 24px;
-margin-left: 22px;
-display: block;
-align-items: center;
-flex-direction: column;
-justify-content: center;
-margin-left: 33px;
+  height: 24px;
+  margin-left: 22px;
+  display: block;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 33px;
 }
 
 .icon-contact img {
-height: 20px;
-padding-left: 36px;
-margin-left: -25px;
+  height: 20px;
+  padding-left: 36px;
+  margin-left: -25px;
 }
 
 .second-col {
-display: block;
-height: 40px;
-padding-top: 30px;
-padding-left: 175px; 
+  display: block;
+  height: 40px;
+  padding-top: 30px;
+  padding-left: 175px; 
 }
 .serviece {
-display: block;
-color: white;
-font-family: sans-serif;
-font-size: 20px;
+  display: block;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
 }
 
 .footer-menu {
-padding-top: 15px;
-color: white;
-font-family: sans-serif;
-display:grid;
-line-height: 30px;
+  padding-top: 15px;
+  color: white;
+  font-family: sans-serif;
+  display:grid;
+  line-height: 30px;
 }
 .second-col a{
 color: aliceblue;
 text-decoration: none;
 }
 .third-col {
-color:white;
+  color:white;
 }
