@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+/* Menu bar */
+.thanh-menu {
+  display: flex;
+  background-color: #000000;
+  border-bottom: 2px solid rgba(252, 250, 250, 0.25);
+  height: 60px;
+  line-height: normal;
+  width: 100%;
+  align-items: center;
+}
+  
+.thanh-menu a{
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+  
+/* Hover cho menu item */
+#menu-item:hover {
+  color: white;
+  height: 10px;
+  background: rgba(180, 180, 180, 0.3);
+  border-radius: 10px;
+}
+#menu-item {
+  margin:0%;
+  line-height: 1.1;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .0125em;
+  color: white;
+}
+  
+#menu-item {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: whitesmoke;
+}
+  
+#menu-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  background: #d5934a;
+  border-radius: 90px;
+}
+#menu-item:hover::after {
+  height: 4px;
+}
+  
+.lor-icon-menu-bar-left {
+  height: 80px;
+  margin-left: 22px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+.icon {
+  position: relative;
+}
+/* Nút đăng nhập và chơi ngay */
+.menu-right-content {
+  display: inline-block;
+  margin-left: auto;
+  padding-right: 40px;
+  padding-bottom: 12px;
+}
+.account-menu-bar-1 {
+  margin-right: 10px;
+  height: 36px;
+  color: white;
+  display: flex;
+  background-color: grey;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-radius: 10px;
+  margin-top: 3%;
+}
+.account-menu-bar-2 {
+  color: black;
+  display:flex;
+  background: linear-gradient(133.11deg, rgb(160, 106, 43) 0%, rgb(202, 159, 66) 97.33%);
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 90px;
+  height: 36px;
+  margin-top: 3%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+  
+li {
+  float: left;
+}
+  
+li #menu-item {
+  display: flex;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000000;
+}
+
+  /* Body */
+  /* Header */
+
+.header{
+  padding-top: 100px;
+  display: flex;
+}
+
+.heading{
+  margin: auto;
+}
+
+.heading > h1 {
+  text-align: center;
+  font-size: 38px;
+}
+
+.logo-container{
+  height: 100px;
+  display: flex;
+}
+
+.logone{
+  width: 348.24px;
+  height: 100px;
+  margin: auto;
+}
+
+/* Video */
+.video{
+  padding-top: 100px;
+}
+
+.video > h1{
+  padding-left: 40px;
+}
+#icon_keys {
+  text-align: center;
+}
+
+#icon_keys img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  padding-top: 40px;
+}
+
+#videoPlayer {
+  max-width: 100%;
+  max-height: 100%;
+}
