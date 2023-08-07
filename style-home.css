@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    font-family: montserrat;
+  }
+  
+  .thanh-menu {
+    display: flex;
+    background-color: #000000;
+    border-bottom: 2px solid rgba(252, 250, 250, 0.25);
+    height: 60px;
+    line-height: normal;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .thanh-menu a{
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Hover cho menu item */
+  #menu-item:hover {
+    color: white;
+    height: 10px;
+    background: rgba(180, 180, 180, 0.3);
+    border-radius: 10px;
+  }
+  #menu-item {
+    margin:0%;
+    line-height: 1.1;
+    font-size: 10px;
+    letter-spacing: .0125em;
+    color: white;
+  }
+  
+  #menu-item {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  #menu-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    background: #d5934a;
+    border-radius: 90px;
+  }
+  #menu-item:hover::after {
+    height: 4px;
+  }
+
+  .lor-icon-menu-bar-left {
+    height: 80px;
+    margin-left: 22px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Nút đăng nhập và chơi ngay */
+  .menu-right-content {
+    display: inline-block;
+    margin-left: auto;
+    padding-right: 40px;
+}
+  .account-menu-bar-1 {
+    margin-right: 10px;
+    height: 36px;
+    color: white;
+    display: flex;
+    background-color: grey;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 3%;
+  }
+  .account-menu-bar-2 {
+    color: black;
+    display:flex;
+    background: linear-gradient(133.11deg, rgb(160, 106, 43) 0%, rgb(202, 159, 66) 97.33%);
+    font-size: 15px;
+    border-radius: 90px;
+    height: 36px;
+    margin-top: 3%;
+
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li #menu-item {
+    display: flex;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000000;
+  }
+  /* slider */
+.main-background{
+  background:linear-gradient
+  (rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+  url(C:\Users\huyho\OneDrive\Desktop\đồ_án_web\full\nidalee-lv1.png)no-repeat;
+  min-height: 1000vh;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.background-content{
+  text-align: center;
+  bottom: 47px;
+  width: 100%;
+  color: #fff;
+}
+
+.background-content{
+  font-size: 30px;
+}
+.text-description{
+  font-size: 24px;
+}
+/* slider */
+.main-background{
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/assets/img/slidernekko.jpg)no-repeat;
+  min-height: 100vh;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.background-content{
+  text-align: center;
+  bottom: 47px;
+  width: 100%;
+  color: #fff;
+}
+
+.text-description{
+  font-size: 24px;
+}
+
+/* feature */
+.container {
+  width: 70%;
+  padding: 10px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: center;
+  min-height: 20vh;
+}
+
+.box {
+  position: relative;
+  padding: 20px;
+  width: 400px;
+  height: 300px;
+  transform-style: preserve-3d;
+  perspective: 1000px ;
+}
+
+.box img{
+  position: absolute;
+  backface-visibility: hidden;
+  transition: 1s;
+  width: 250px;
+  height: 350px;
+}
+
+.box img:nth-child(2)
+{
+  transform: rotateY(180deg);
+}
+
+.box:hover img:nth-child(2)
+{
+  transform: rotateY(0deg);
+}
+
+.box:hover img:nth-child(1)
+{
+  transform: rotateY(-180deg);
+}
+
+
+
+
+.feature{
+  position: relative;
+}
+
+.feature-heading{
+  text-align: center;
+  padding-top: 16px;
+  font-size: 28px;
+}
+
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+  display: block;
+}
+/* about us */
+.about-us h1{
+  text-align: center;
+}
+.title1{
+  padding-left: 100px;
+  line-height: 1.6;
+  width: 55%;
+  text-align: justify;
+}
+.title2{
+  text-align: right;
+  padding-right: 100px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  line-height: 1.6;
+  width: 55%;
+  float: right;
+}
+
+.title2 > h2 {
+  text-align: right;
+}
+
+
+  /* Footer */
+  .footer {
+    display: flex;
+    background-color: #000000;
+    border-top: 2px solid rgba(252, 250, 250, 0.25);
+    height:280px;
+    line-height: normal;
+    width: 100%;
+  }
+  .first-para {
+  display: block;
+  color: white;
+  height: 40px;
+  width: 588px;
+  padding-left: 45px;
+  padding-top: 30px;
+  line-height: 23px;
+}
+p3{
+  padding-left: 570px;
+}
+
+.second-para {
+  display: block;
+  color: white;
+  height: 40px;
+  padding-left: 45px;
+  padding-top: 95px;
+}
+.icon-contact {
+  height: 24px;
+  margin-left: 22px;
+  display: block;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 33px;
+}
+
+.icon-contact img {
+  height: 20px;
+  padding-left: 36px;
+  margin-left: -25px;
+}
+
+.second-col {
+  display: block;
+  height: 40px;
+  padding-top: 30px;
+  padding-left: 175px; 
+}
+.serviece {
+  display: block;
+  color: white;
+  font-size: 20px;
+}
+
+.footer-menu {
+  padding-top: 15px;
+  color: white;
+  display:grid;
+  line-height: 30px;
+}
+.second-col a{
+color: aliceblue;
+text-decoration: none;
+}
+.third-col {
+  color:white;
+}
